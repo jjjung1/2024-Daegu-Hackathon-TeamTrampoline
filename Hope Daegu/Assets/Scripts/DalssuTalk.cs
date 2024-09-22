@@ -23,8 +23,9 @@ public class DalssuTalk : MonoBehaviour
     public Sprite shinning;
     public Sprite cry;
     public Sprite hmm;
-    void Awake()
+    public void Awake()
     {
+        answer.SetActive(true);
         image = Dalssu.GetComponent<Image>();
         image.sprite = quest;
         talkData = new List<(string, int)>();
@@ -40,10 +41,6 @@ public class DalssuTalk : MonoBehaviour
 
     public void Next()
     {
-        if (answer.activeSelf == true)
-        {
-            talking.SetActive(false);
-        }
         if (num < talkData.Count)
         {
             (message, type) = talkData[num];
@@ -51,8 +48,13 @@ public class DalssuTalk : MonoBehaviour
         }
         else
         {
+            
+            if (type == 4)
+            {
+                Application.Quit();
+            }
             UDs.newone = false;
-            gameObject.SetActive(false); // 원하는 씬 이름으로 수정하세요.
+            gameObject.SetActive(false);
         }
 
     }
