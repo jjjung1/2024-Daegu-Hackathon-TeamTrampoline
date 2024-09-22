@@ -27,7 +27,6 @@ public class ChatController_EnterSuseongmot : MonoBehaviour
     {
         StartCoroutine(StartGame());
     }
-
     void Awake()
     {
         portraitData = new Dictionary<int, Sprite>();
@@ -50,33 +49,33 @@ public class ChatController_EnterSuseongmot : MonoBehaviour
         portraitData.Add(2000 + 6, portraitArr[6]);
         portraitData.Add(2000 + 7, portraitArr[7]);
         portraitData.Add(2000 + 8, portraitArr[8]);
-
+        
         //스크립트 출력
-        yield return StartCoroutine(Chatting("플레이어|1000", "여기는...|1"));
-        yield return StartCoroutine(Chatting("플레이어|1000", "저수지인가? 너무 허허벌판...|1"));
+        yield return StartCoroutine(Chatting(string.Format("{0}|1000", UserDatas.Instance.nickname), "여기는...|1"));
+        yield return StartCoroutine(Chatting(string.Format("{0}|1000", UserDatas.Instance.nickname), "저수지인가? 너무 허허벌판...|1"));
         yield return StartCoroutine(Chatting("달쑤|2000", "!|4"));
         yield return StartCoroutine(Chatting("달쑤|2000", "(첨벙))|")); //script 한 글자 씹힘
-        yield return StartCoroutine(Chatting("플레이어|1000", "?|4"));
+        yield return StartCoroutine(Chatting(string.Format("{0}|1000", UserDatas.Instance.nickname), "?|4"));
         yield return StartCoroutine(Chatting("달쑤|2000", "앗, 죄송합니다.|5"));
         yield return StartCoroutine(Chatting("달쑤|2000", "자주 놀던 곳이거든요.|6"));
-        yield return StartCoroutine(Chatting("플레이어|1000", "...역시 수달인가.|1"));
+        yield return StartCoroutine(Chatting(string.Format("{0}|1000", UserDatas.Instance.nickname), "...역시 수달인가.|1"));
         yield return StartCoroutine(Chatting("달쑤|2000", "종족 특성은 맞지만... 사람들도 자주 들어와요!|0"));
         yield return StartCoroutine(Chatting("달쑤|2000", "철인3종 경기도 바로 여기서 한다구요.|7"));
-        yield return StartCoroutine(Chatting("플레이어|1000", "철인 3종 경기도?|0"));
-        yield return StartCoroutine(Chatting("플레이어|1000", "그래, 물이 맑아보이긴 한다.|2"));
+        yield return StartCoroutine(Chatting(string.Format("{0}|1000", UserDatas.Instance.nickname), "철인 3종 경기도?|0"));
+        yield return StartCoroutine(Chatting(string.Format("{0}|1000", UserDatas.Instance.nickname), "그래, 물이 맑아보이긴 한다.|2"));
         yield return StartCoroutine(Chatting("달쑤|2000", "네. 신천의 맑은 물이 유입돼서 범어천으로 순환하고 있어요.|6"));
         yield return StartCoroutine(Chatting("달쑤|2000", "그런데... 이렇게 좋은 수성못인데...|2"));
         yield return StartCoroutine(Chatting("달쑤|2000", "너무 고요한 것 같지 않아요?|3"));
         yield return StartCoroutine(Chatting("달쑤|2000", " 좀 더 복작복작했으면 좋겠는데, 행사가 없으면 아무도 안 온다구요.|1"));
         yield return StartCoroutine(Chatting("달쑤|2000", "매일매일 와도 좋은 곳인데...|1"));
-        yield return StartCoroutine(Chatting("플레이어|1000", "...|1"));
-        yield return StartCoroutine(Chatting("플레이어|1000", "...|2"));
-        yield return StartCoroutine(Chatting("플레이어|1000", "너도 이제 안목이 생겼구나.|3"));
+        yield return StartCoroutine(Chatting(string.Format("{0}|1000", UserDatas.Instance.nickname), "...|1"));
+        yield return StartCoroutine(Chatting(string.Format("{0}|1000", UserDatas.Instance.nickname), "...|2"));
+        yield return StartCoroutine(Chatting(string.Format("{0}|1000", UserDatas.Instance.nickname), "너도 이제 안목이 생겼구나.|3"));
         yield return StartCoroutine(Chatting("달쑤|2000", "네?|5"));
-        yield return StartCoroutine(Chatting("플레이어|1000", "나도 보이거든.|3"));
-        yield return StartCoroutine(Chatting("플레이어|1000", "사람들이 여기에 가득 모여서 놀고 있는 미래가.|3"));
+        yield return StartCoroutine(Chatting(string.Format("{0}|1000", UserDatas.Instance.nickname), "나도 보이거든.|3"));
+        yield return StartCoroutine(Chatting(string.Format("{0}|1000", UserDatas.Instance.nickname), "사람들이 여기에 가득 모여서 놀고 있는 미래가.|3"));
         yield return StartCoroutine(Chatting("달쑤|2000", "그 말은...|6"));
-        yield return StartCoroutine(Chatting("플레이어|1000", "멋지게 보여줄게. 이번 의뢰도.|2"));
+        yield return StartCoroutine(Chatting(string.Format("{0}|1000", UserDatas.Instance.nickname), "멋지게 보여줄게. 이번 의뢰도.|2"));
 
 
         LowerSortingOrder(1); //Canvas Sorting Order 조절 (대화창 내리기)

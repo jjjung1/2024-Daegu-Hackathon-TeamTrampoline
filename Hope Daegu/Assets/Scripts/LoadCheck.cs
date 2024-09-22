@@ -16,10 +16,8 @@ public class LoadCheck : MonoBehaviour
 
     public void CheckFileExists()
     {
-        // 절대 경로를 사용하거나 Application.persistentDataPath 같은 Unity 경로를 사용할 수 있습니다.
-        string fullPath = Path.Combine(Application.persistentDataPath, filePath);
 
-        if (File.Exists(fullPath))
+        if (PlayerPrefs.HasKey("nickname"))
         {
             SceneManager.LoadScene("Main");
         }

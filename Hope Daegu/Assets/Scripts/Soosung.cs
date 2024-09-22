@@ -8,6 +8,6 @@ public class Soosung : MonoBehaviour
     
     public void onclicked()
     {
-        SceneManager.LoadScene(""); // 荐己备肺!
+        SceneManager.LoadScene("EnterSuseongmot"); // 荐己备肺!
     }
 }
