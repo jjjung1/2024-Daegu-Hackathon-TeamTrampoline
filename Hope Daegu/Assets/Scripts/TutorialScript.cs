@@ -55,6 +55,7 @@ public class TutorialScript : MonoBehaviour
         }
         else
         {
+            UDs.newone = false;
             gameObject.SetActive(false); // 원하는 씬 이름으로 수정하세요.
         }
 
