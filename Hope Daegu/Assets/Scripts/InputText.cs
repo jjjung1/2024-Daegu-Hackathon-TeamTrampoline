@@ -20,8 +20,7 @@ public class InputText : MonoBehaviour
     {
         string n = Text.GetComponent<TextMeshProUGUI>().text;
         if (n != "") // Ã³¸® ¾ÈµÊ ¤Ì¤Ì
-        {
-            Debug.Log(n);
+        {;
             UD.nickname = n;
             senario.Next();
             gameObject.SetActive(false);

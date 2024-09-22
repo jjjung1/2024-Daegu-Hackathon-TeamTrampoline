@@ -72,7 +72,7 @@ public class Senario : MonoBehaviour
         talkData.Add((0, "그건 과장된 소문이지. 당연하잖아?", 0));
         talkData.Add((1, "...믿었는데...", 2));
         talkData.Add((1, "그, 그치만 이런 일화들이 아니더라도 \n{0}님이 커리어가 탄탄하신 건 사실이니까요.", 9));
-        talkData.Add((1, "대구에도 {0}님이 꼭 필요합니다!\n도와주실 거죠?", 10));
+        talkData.Add((1, "대구에도 {0}님이 꼭 필요합니다! 도와주실 거죠?", 10));
         talkData.Add((1, "그럼 잘 부탁드립니다. 일단 대구로 가볼까요?", 4));
     }
 
@@ -84,7 +84,6 @@ public class Senario : MonoBehaviour
             (talker, message, type) = talkData[num];
             if (message.Contains("{0}"))
             {
-                Debug.Log("돼라좀");
                 message = string.Format(message, UD.nickname);
             }
             num++;
