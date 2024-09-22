@@ -12,11 +12,13 @@
  ### 팀장 : 박정원
  경북대학교 섬유시스템공학과에 재학 중이며 컴퓨터학부 글로벌소프트웨어로 복수전공 중입니다.
  해당 프로젝트에서 '반짝반짝 도시' 부분을 담당하였습니다.
- 깃허브 주소: 
+ 
+ 깃허브 주소: https://github.com/jjjung1
  ### 팀원 : 노성민
  경북대학교 컴퓨터학부 플랫폼SW & 데이터사이언스 전공 재학 중입니다.
  해당 프로젝트에서 시작 부분을 담당하였습니다.
- 깃허브 주소:
+ 
+ 깃허브 주소: https://github.com/RohSeongmin
 ## 프로젝트 소개
 ## 시작 가이드
  다운로드 주소: https://drive.google.com/file/d/1xCkhi9FWh6BELGrZ2-OogpndPcNHDqQx/view?usp=drive_link
