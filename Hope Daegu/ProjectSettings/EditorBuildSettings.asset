@@ -6,6 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/EnterSuseongmot.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 0
+    path: Assets/Scenes/SuseongmotScene.unity
+    guid: 4847cfe4b50c7c043bdf46dcdd3b275a
+  - enabled: 1
+    path: Assets/Scenes/AcademyStreet.unity
+    guid: a6d95c0b5d4a6cc459abb7d12684e8f8
+  - enabled: 1
+    path: Assets/Scenes/HighStreet.unity
+    guid: ae3438fb3aacd6b41a77b4cb416fdc96
+  - enabled: 1
+    path: Assets/Scenes/JustStreet.unity
+    guid: 5497edb6d15c7414290e2261e4d03d7e
+  - enabled: 1
+    path: Assets/Scenes/Cafe.unity
+    guid: aaf8a6315340ea443857d49482f9d57e
+  - enabled: 1
+    path: Assets/Scenes/NearSuseongmot.unity
+    guid: f9b47f96857a5574ba34f75f4dfebbca
   m_configObjects: {}
