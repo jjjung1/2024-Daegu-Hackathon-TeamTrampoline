@@ -12,6 +12,15 @@ public class Clicked : MonoBehaviour
     public DalssuTalk DT;
     public talking talk;
     public TextMeshProUGUI text;
+
+    public TextMeshProUGUI at1;
+    public TextMeshProUGUI at2;
+
+    public void Awake()
+    {
+        at1.text = "저장";
+        at2.text = "나가기";
+    }
     public void OnClicked()
     {
         if(text.text == "저장")
@@ -32,11 +41,21 @@ public class Clicked : MonoBehaviour
         }
         else if(text.text == "나가기")
         {
-           
-        }else if(text.text == "가야 돼")
-        {
+            answer.SetActive(false);
+            DT.talkData.Add((string.Format("벌써 가시는 건가요 ㅠㅠ 아직 저희 대구는 {0}님의 도움이 필요해요", UDs.nickname), 3));
+            at1.text = "가야 돼";
+            at2.text = "알았어.. 안갈게";
+            DT.Next();
+            answer.SetActive(true);
 
-        }else if(text.text == "알았어.. 안갈게")
+        }
+        else if(text.text == "가야 돼")
+        {
+            answer.SetActive(false);
+            DT.talkData.Add((string.Format("어쩔 수 없네요.. 아쉽지만 다음 만남만을 기다리고 있겠습니다… ", UDs.nickname), 4));
+            DT.Next(); 
+        }
+        else if(text.text == "알았어.. 안갈게")
         {
             talk.gameObject.SetActive(false);
         }

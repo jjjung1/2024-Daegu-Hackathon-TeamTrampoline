@@ -5,6 +5,7 @@ using UnityEngine;
 public class DalssuButton : MonoBehaviour
 {
 
+    public Clicked c;
     public DalssuTalk DT;
     public UserDatas UDs;
     public talking talk;
@@ -17,6 +18,8 @@ public class DalssuButton : MonoBehaviour
     {
         if(UDs.newone == false)
             talk.gameObject.SetActive(true);
-        DT.num = 0;
+
+        c.Awake();
+        DT.Awake();
     }
 }

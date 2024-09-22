@@ -37,7 +37,7 @@ public class TutorialScript : MonoBehaviour
     public void GenerateData()
     {
         talkData.Add((string.Format("지금도 충분히 멋지지만 {0}님께서 더 멋진 대구를 만들어주실거라 전 믿어요", UDs.nickname), 2));
-        talkData.Add(("한 가지 아쉬운 점은 며칠 전에 내린 거센 비 때문에 현재는 '사람들이 많은 곳'과‘반짝반짝한 곳'밖에 갈 수 없어요.", 1));
+        talkData.Add(("한 가지 아쉬운 점은 며칠 전에 내린 거센 비 때문에 현재는‘반짝반짝한 곳'밖에 갈 수 없어요.", 1)); // '사람들이 많은 곳'과
         talkData.Add(("나머지 곳들도 정말 멋진 곳이지만 일단 지금 갈 수 있는 곳부터 들러봐요..!", 0));
         talkData.Add(("지도에서 원하시는 곳을 고르면 갈 수 있어요! 교통비는 단돈 1500원!", 2));
         talkData.Add(("그래도 첫 이동만큼은 무리하지 마시라고 제가 미리 소매넣기를 좀 해놓았죠", 3));
