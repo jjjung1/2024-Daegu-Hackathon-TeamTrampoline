@@ -26,7 +26,7 @@ public class Clicked : MonoBehaviour
         if(text.text == "저장")
         {
             answer.SetActive(false);
-            DT.talkData.Add(("좋아요! 지금까지의(닉네임)님의 멋진 일상을 하나하나 기록해둘게요!", 2));
+            DT.talkData.Add((string.Format("좋아요! 지금까지의 {0}님의 멋진 일상을 하나하나 기록해둘게요!", UDs.nickname), 2));
             DT.talkData.Add(("완료했습니다! 앞으로도 파이팅이에요!", 1));
             DT.Next();
             PlayerPrefs.SetString("nickname", UDs.nickname);

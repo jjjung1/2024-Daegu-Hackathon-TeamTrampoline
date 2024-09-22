@@ -27,18 +27,24 @@ public class UserDatas : MonoBehaviour
         if (PlayerPrefs.HasKey("nickname"))
         {
             newone = false;
+            nickname = PlayerPrefs.GetString("nickname");
+            power_max = PlayerPrefs.GetInt("power_max");
+            power_percent = PlayerPrefs.GetInt("power_percent");
+            money = PlayerPrefs.GetInt("money");
+            string json = PlayerPrefs.GetString("inventory");
+            Serialization<string> serialization = JsonUtility.FromJson<Serialization<string>>(json);
+            List<string> inventory = serialization.target;
         }
         else
         {
             newone = true;
+            nickname = UserData.Instance.nickname;
+            power_max = 100;
+            power_percent = 80;
+            money = 1500;
+            this.inventory = new List<string>();
         }
-        nickname = PlayerPrefs.GetString("nickname", UserData.Instance.nickname);
-        power_max = PlayerPrefs.GetInt("power_max", 100);
-        power_percent = PlayerPrefs.GetInt("power_percent", 80);
-        money = PlayerPrefs.GetInt("money", 1500);
-        string json = PlayerPrefs.GetString("inventory", "{}");
-        Serialization<string> serialization = JsonUtility.FromJson<Serialization<string>>(json);
-        List<string> inventory = serialization.target;
+        
 
         if (Instance == null)
         {

@@ -52,7 +52,7 @@ public class ChatController_AcademyStreet : MonoBehaviour
         portraitData.Add(2000 + 0, portraitArr[5]);
 
         //스크립트 출력
-        yield return StartCoroutine(Chatting("플레이어|1000", "학생?|2", 0));
+        yield return StartCoroutine(Chatting(string.Format("{0}|1000", UserDatas.Instance.nickname), "학생?|2", 0));
         yield return StartCoroutine(Chatting("피곤한 학생|2000", "좋아하는 거요? 집 가서 누워서 자는 거요. 쉬고 싶다고요.|0", 0));
 
         //보상 출력
