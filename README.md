@@ -22,9 +22,13 @@
 ## 프로젝트 소개
 ## 시작 가이드
  다운로드 주소: https://drive.google.com/file/d/1xCkhi9FWh6BELGrZ2-OogpndPcNHDqQx/view?usp=drive_link
+ 
  모바일 환경에서 APK파일을 다운로드 한 후 열어주시면 됩니다.
+ 
  안드로이드 환경에서 제공됩니다.
+ 
  시연 영상을 참고해주세요.
+ 
  시연영상 링크 : 
 ## 주요 기능
 ## 자료 출처
