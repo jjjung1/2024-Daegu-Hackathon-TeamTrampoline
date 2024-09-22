@@ -8,6 +8,10 @@ public class LoadCheck : MonoBehaviour
 {
     public string filePath = "/data/data/Hope_Daegue/shared_prefs/SharedPreferences.xml";
 
+    private void Awake()
+    {
+        PlayerPrefs.DeleteAll();
+    }
 
     public void OnClick()
     {
